@@ -1,0 +1,15 @@
+name: POC Build
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Print Hello
+        run: echo "✅ Hello from GitHub Actions"
